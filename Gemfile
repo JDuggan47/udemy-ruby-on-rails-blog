@@ -20,7 +20,9 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy', require: false
   gem 'pry-rails'
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails', '~> 3.6'
+  gem 'factory_bot'
+  gem "factory_bot_rails"
   gem 'shoulda'
   gem 'valid_attribute'
 end
