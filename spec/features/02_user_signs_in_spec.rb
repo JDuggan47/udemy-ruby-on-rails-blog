@@ -2,7 +2,7 @@ require "rails_helper"
 
 feature "User signs in" do
   scenario "user signs in succesfully" do
-    user = FactoryBot.create(:user)
+    user = FactoryBot.build(:user)
 
     visit login_path
 
@@ -14,7 +14,7 @@ feature "User signs in" do
   end
 
   scenario "user signs in with invalid info" do
-    user = FactoryBot.create(:user)
+    user = FactoryBot.build(:user)
     visit login_path
 
     fill_in "Email", with: user.email
