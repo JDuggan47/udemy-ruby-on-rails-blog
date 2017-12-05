@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe CategoriesController, type: :controller do
-  let!(:category)  { FactoryBot.create(:category, name: "movies") }
+  let!(:category) { FactoryBot.create(:category, name: "movies") }
 
   describe "GET#index" do
     it "has a 200 status code" do
