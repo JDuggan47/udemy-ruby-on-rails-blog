@@ -8,9 +8,10 @@ FactoryBot.define do
   end
 
   factory :admin, class: User do
-    username "mike123"
-    email "mike@example.com"
     password "password"
     admin true
+
+    sequence(:username) { |n| "admin#{n}" }
+    sequence(:email) { |n| "admin#{n}@example.com"}
   end
 end
