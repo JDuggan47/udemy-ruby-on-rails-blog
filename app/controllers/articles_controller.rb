@@ -28,7 +28,6 @@ class ArticlesController < ApplicationController
     end
   end
 
-
   def create
     @article = Article.new(article_params)
     @article.user = current_user
