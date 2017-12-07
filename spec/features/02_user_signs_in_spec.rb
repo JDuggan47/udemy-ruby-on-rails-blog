@@ -2,7 +2,7 @@ require "rails_helper"
 
 feature "User signs in" do
   scenario "user signs in succesfully" do
-    user = FactoryBot.build(:user)
+    user = FactoryBot.create(:user)
 
     visit login_path
 
