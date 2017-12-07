@@ -5,7 +5,7 @@ feature "user gets new article form and creates article" do
   let!(:user) { FactoryBot.create(:user) }
   let!(:admin) { FactoryBot.create(:admin) }
 
-  scenario "creates category succesfully" do
+  scenario "creates article succesfully" do
     visit login_path
 
     fill_in "Email", with: user.email
